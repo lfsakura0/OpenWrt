@@ -23,6 +23,8 @@ rm -rf feeds/luci/applications/luci-app-serverchan
 rm -rf feeds/packages/net/curl
 git clone https://github.com/sbwml/feeds_packages_net_curl feeds/packages/net/curl
 
+git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb package/lua-maxminddb
+
 
 # Git稀疏克隆，只克隆指定目录到本地
 function git_sparse_clone() {
