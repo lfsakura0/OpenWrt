@@ -21,7 +21,7 @@ rm -rf feeds/luci/applications/luci-app-serverchan
 
 # curl/8.5.0 - fix passwall `time_pretransfer` check
 rm -rf feeds/packages/net/curl
-git clone https://github.com/sbwml/feeds_packages_net_curl feeds/packages/net/curl
+git clone --depth=1 https://github.com/sbwml/feeds_packages_net_curl feeds/packages/net/curl
 
 git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb package/lua-maxminddb
 
