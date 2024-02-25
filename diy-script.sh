@@ -23,6 +23,17 @@ rm -rf feeds/luci/applications/luci-app-serverchan
 rm -rf feeds/packages/net/curl
 git clone --depth=1 https://github.com/sbwml/feeds_packages_net_curl feeds/packages/net/curl
 
+# nghttp3
+rm -rf feeds/packages/libs/nghttp3
+git clone --depth=1 https://github.com/sbwml/package_libs_nghttp3 package/libs/nghttp3
+
+# ngtcp2
+rm -rf feeds/packages/libs/ngtcp2
+git clone --depth=1 https://github.com/sbwml/package_libs_ngtcp2 package/libs/ngtcp2
+
+
+
+
 git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb package/lua-maxminddb
 
 
