@@ -19,6 +19,12 @@ rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/luci/applications/luci-app-netdata
 rm -rf feeds/luci/applications/luci-app-serverchan
 
+rm -rf feeds/packages/net/{xray-core,v2ray-core,v2ray-geodata,sing-box}
+
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
+
+
 # curl/8.5.0 - fix passwall `time_pretransfer` check
 rm -rf feeds/packages/net/curl
 git clone --depth=1 https://github.com/sbwml/feeds_packages_net_curl feeds/packages/net/curl
